@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de mot de passe 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Générateur<br>de mot de passe</h2>
+        <div class="result-container">
+            <input type="text" id="result" />
+            <button class="copy-result" id="copy"><span class="material-symbols-outlined">
+                folder_copy
+                </span></button>
+        </div>
+        <div class="settings">
+            <div class="input-group">
+                <label>Ajouter majuscules</label>
+                <input type="checkbox" id="uppercase">
+            </div>
+            <div class="input-group">
+                <label>Ajouter chiffres</label>
+                <input type="checkbox" id="numbers" >
+            </div>
+            <div class="input-group">
+                <label>Ajouter symboles</label>
+                <input type="checkbox" id="symbols" >
+            </div>
+            <div class="input-group">
+                <label>Longueur du mot de passe (8-20)</label>
+                <input type="range" id="length" min="8" max="20" step="1" />
+                <span id="length-result">8</span>
+            </div>
+        </div>
+        <button class="generate-btn" id="generate">Générer mot de passe</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

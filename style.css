@@ -1,0 +1,125 @@
+:root {
+  --color1: #6575c1;
+  --color2: #9FACE6;
+  --white: #fff;
+  --light: #f1f1f1;
+  --dark: #333;
+  --accent: var(--color1);
+  --lightgray: #cbd5e1;
+  --gradient: linear-gradient(to left, var(--color1) 0%, var(--color2) 100%);
+
+}
+
+body {
+  background-image: var(--gradient);
+  font-family: 'Source Code Pro', monospace;
+  accent-color: var(--accent);
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  color: var(--dark);
+}
+
+.container {
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background: var(--light);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+#result {
+  flex: 1;
+  background: var(--white);
+}
+
+.copy-result {
+  background-image: var(--gradient);
+  border: none;
+  padding: 9px 11px;
+  color: white;
+  border-radius: 25px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.copy-result:hover {
+  background: var(--color1);
+}
+
+input[type="text"] {
+  padding: 20px 24px;
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+}
+
+input[type="range"] {
+  padding: 8px 10px;
+  background: #f8f8f8;
+  flex: 1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 1px solid var(--color2);
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.settings {
+  margin-top: 30px;
+}
+
+.input-group {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.generate-btn {
+  background: var(--gradient);
+  padding: 15px 25px;
+  border: none;
+  color: white;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.generate-btn:hover,
+.copy-btn:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  background: var(--color1);
+}
+
+.alert {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+}
