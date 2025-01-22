@@ -40,7 +40,7 @@ Le projet est structuré comme suit :
 1. Ouvrez le fichier `index.html` dans un navigateur web.
 2. Sélectionnez les critères de votre mot de passe (longueur, majuscules, chiffres, symboles).
 3. Cliquez sur `Générer mot de passe` pour générer un mot de passe.
-4. Cliquez sur l'icône de `copie` pour copier le mot de passe généré dans le presse-papiers.
+4. Cliquez sur l'icône de `Copie` pour copier le mot de passe généré dans le presse-papiers.
 
 ## Contributions
 
@@ -52,4 +52,4 @@ Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
 
 ---
 
-Développé avec ❤️ par [Michel dufour](https://micheldufour.fr/)
+Développé avec ❤️ par [Michel Dufour](https://micheldufour.fr/)
